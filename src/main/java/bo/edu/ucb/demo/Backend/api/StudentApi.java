@@ -7,9 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/v2/student")
+@RequestMapping(value = "/v1/student")
 public class StudentApi {
-    InscripcionBl inscripcionBl;
+    private InscripcionBl inscripcionBl;
 
     @Autowired
     public StudentApi(InscripcionBl inscripcionBl) {

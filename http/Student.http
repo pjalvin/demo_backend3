@@ -1,29 +1,29 @@
-POST http://localhost:8080/v2/student
+POST http://localhost:8080/v1/student
 Content-Type: application/json
 
 {
-  "fullName" : "Alvin Poma"
+  "fullName" : "Juan Lopez"
 }
 
 ###
 
-GET http://localhost:8080/v2/student/?id=1
+GET http://localhost:8080/v1/student/?id=2
 Content-Type: application/json
 
 ###
 
 
-PUT http://localhost:8080/v2/student
+PUT http://localhost:8080/v1/student
 Content-Type: application/json
 
 {
-  "studentId": 1,
-"fullName" : "Alvin Poma Tarqui"
+  "studentId": 3,
+"fullName" : "Juan Lopez Perez"
 }
 
 ###
 
-DELETE http://localhost:8080/v2/student/?id=1
+DELETE http://localhost:8080/v1/student/?id=3
 Content-Type: application/json
 
 ###
