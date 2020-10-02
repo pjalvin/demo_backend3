@@ -1,0 +1,10 @@
+###
+GET http://localhost:8080/mi_ruta/
+
+###
+GET http://localhost:8080/mi_ruta/dos
+
+###
+GET http://localhost:8080/mi_ruta/student
+
+

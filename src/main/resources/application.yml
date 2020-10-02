@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo-backend
+  datasource:
+    name: demo_mysql_db
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/demo_backend?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: ""
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connectionTestQuery: select 1
+      maximum-pool-size: 2
+      connection-timeout: 60000
