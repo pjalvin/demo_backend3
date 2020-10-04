@@ -7,7 +7,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/v1/student/?id=2
+GET http://localhost:8080/v1/student/?id=12
 Content-Type: application/json
 
 ###
@@ -17,13 +17,13 @@ PUT http://localhost:8080/v1/student
 Content-Type: application/json
 
 {
-  "studentId": 3,
+  "studentId": 12,
 "fullName" : "Juan Lopez Perez"
 }
 
 ###
 
-DELETE http://localhost:8080/v1/student/?id=3
+DELETE http://localhost:8080/v1/student/?id=12
 Content-Type: application/json
 
 ###

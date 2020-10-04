@@ -15,6 +15,7 @@ public class StudentApi {
     public StudentApi(InscripcionBl inscripcionBl) {
         this.inscripcionBl = inscripcionBl;
     }
+
     @RequestMapping(method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
     public Student create(@RequestBody Student student){
         return inscripcionBl.createStudent(student);
@@ -25,12 +26,10 @@ public class StudentApi {
         return inscripcionBl.findStudentByPK(id);
     }
 
-
     @RequestMapping(method = RequestMethod.PUT,produces = MediaType.APPLICATION_JSON_VALUE)
     public Student update(@RequestBody Student student){
         return inscripcionBl.updateStudent(student);
     }
-
 
     @RequestMapping(method = RequestMethod.DELETE,produces = MediaType.APPLICATION_JSON_VALUE)
     public String delete(@RequestParam Integer id){
